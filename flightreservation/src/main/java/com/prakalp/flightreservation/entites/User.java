@@ -1,17 +1,16 @@
 package com.prakalp.flightreservation.entites;
 
-public class User {
-	private long id;
+import javax.persistence.Entity;
+
+
+@Entity
+public class User extends AbstractEntity {
+
 	private String firstName;
 	private String lastName;
 	private String email;
 	private String password;
-	public long getId() {
-		return id;
-	}
-	public void setId(long id) {
-		this.id = id;
-	}
+
 	public String getFirstName() {
 		return firstName;
 	}
