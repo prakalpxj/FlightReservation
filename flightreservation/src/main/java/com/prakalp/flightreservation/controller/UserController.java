@@ -40,4 +40,9 @@ public class UserController {
 		return "login/login";
 		
 	}
+	
+	@RequestMapping("/showLogin")
+	public String showLoginPage() {
+		return "login/login";
+	}
 }
